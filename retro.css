@@ -1,0 +1,148 @@
+body {
+background-color: #cccccc;
+font-family: arial;
+}
+
+img {
+border: none;
+}
+
+h1 {
+font-weight: bolder;
+}
+
+h2 {
+font-weight: bold;
+font-style: italic;
+}
+
+.interface {
+width: 955px;
+background-color: black;
+border: 5px solid #ff66ff;
+margin: 50px auto auto auto;
+color: white;
+}
+
+#top, .bottom, .content {
+padding: 10px;
+}
+
+#top {
+height: 300px;
+}
+
+.topright {
+text-align: right;
+float: right;
+}
+
+.content {
+float: right;
+width: 600px;
+margin-top: -110px;
+/*IE*/#margin-top: 0px; 
+border: 5px solid #ff66ff;
+border-right: 0px;
+}
+
+.content p {
+text-align: justify;
+}
+
+.bottom {
+font-weight: bolder;
+text-align: center;
+}
+
+.bottom a {
+text-decoration: none;
+color: #ff66ff;
+}
+
+#arrow {
+float: right;
+margin-top: -50px;
+color: white;
+}
+
+.menu a {
+display: block;
+margin-bottom: 5px;
+padding-left: 50px;
+width: 150px;
+/*IE*/#width: 200px;
+border-bottom: 3px solid #ff66ff;
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.menu .a2 {
+width: 160px;
+/*IE*/#width: 210px;
+}
+
+.menu a:visited {
+color: #cccccc
+}
+
+.menu a:hover {
+color: #ff66ff;
+}
+
+.menu a:active {
+padding-left: 60px;
+width: 140px;
+/*IE*/#width: 200px;
+color: #ff66ff;
+}
+
+.menu .a2:active {
+padding-left: 60px;
+width: 150px;
+/*IE*/#width: 210px;
+color: #ff66ff;
+}
+
+#acurrent {
+padding-left: 60px;
+width: 140px;
+/*IE*/#width: 200px;
+color: #ff66ff;
+}
+
+#a2current {
+padding-left: 60px;
+width: 150px;
+/*IE*/#width: 210px;
+color: #ff66ff;
+}
+
+form div {
+display: block;
+margin-bottom: 3px;
+}
+
+form input, form p {
+display: inline;
+}
+
+.right {
+float: right;
+margin-left: 10px;
+}
+
+.left {
+float: left;
+margin-right: 10px;
+}
+
+.album div {
+display: inline-block;
+/*IE*/#display: inline;
+width: 150px;
+text-align: center;
+margin: 0px 22px;
+/*IE*/#margin: 0px 20px;
+}
