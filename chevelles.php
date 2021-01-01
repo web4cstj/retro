@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include "Retro.php";
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Retro Jeunesse 60 - Les Chevelles</title>
@@ -8,7 +10,7 @@
 
 <body>
 <div class="interface">
-<?php include('sections/entete.inc.php'); ?>
+<?php echo Retro::html_entete(); ?>
 <!--DEBUT MILIEU-->
 <div style="height: 450px;">
 <!--DEBUT CONTENU-->
@@ -21,10 +23,10 @@
 		<p>Gilles Bertrand, chanteur soliste et interpr&egrave;te de la chanson "Marlyne" est d&eacute;c&eacute;d&eacute; samedi le 21 novembre 2009 &agrave; l'&acirc;ge de 67 ans d'un cancer dont il a perdu la bataille. Son d&eacute;c&egrave;s a &eacute;t&eacute; constat&eacute; &agrave; 6 hr. A.M. au soin palliatif de l'h&ocirc;pital Laval &agrave; Qu&eacute;bec.</p>
 	</div>
 <!--FIN CONTENU-->
-<?php include('sections/menu.inc.php'); ?>
+<?php echo Retro::html_menu(); ?>
 </div> 
 <!--FIN MILIEU-->
-<?php include('sections/pied.inc.php'); ?>
+<?php echo Retro::html_pied(); ?>
 </div>                  
 </body>
 </html>

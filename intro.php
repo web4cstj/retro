@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include "Retro.php";
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Retro Jeunesse 60 - Introduction</title>
@@ -8,7 +10,7 @@
 
 <body>
 <div class="interface">
-<?php include('sections/entete.inc.php'); ?>
+<?php echo Retro::html_entete(); ?>
 <!--DEBUT MILIEU-->
 <div style="height: 470px;">
 <!--DEBUT CONTENU-->
@@ -21,10 +23,10 @@
 		<p>R&eacute;tro Jeunesse 60 est le seul organisme du genre &agrave; &eacute;voluer sur Internet avec une vocation inconditionnelle &agrave; l'information de la culture francophone &agrave; travers les &acirc;ges.</p>
 	</div>
 <!--FIN CONTENU-->
-<?php include('sections/menu.inc.php'); ?>
+<?php echo Retro::html_menu(); ?>
 </div> 
 <!--FIN MILIEU-->
-<?php include('sections/pied.inc.php'); ?>
+<?php echo Retro::html_pied(); ?>
 </div>                  
 </body>
 </html>

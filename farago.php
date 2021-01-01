@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include "Retro.php";
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Retro Jeunesse 60 - Johnny Farago</title>
@@ -8,7 +10,7 @@
 
 <body>
 <div class="interface">
-<?php include('sections/entete.inc.php'); ?>
+<?php echo Retro::html_entete(); ?>
 <!--DEBUT MILIEU-->
 <div style="height: 410px;">
 <!--DEBUT CONTENU-->
@@ -21,10 +23,10 @@
 		<p>En 1967, son premier 45 tours sous &eacute;tiquette Canusa " Je t'aime, je te veux ", est un v&eacute;ritable succ&egrave;s au palmar&egrave;s et &agrave; l'&eacute;mission jeunesse d'aujourd'hui. Par la suite " T'ai-je dit et T'aurais pas d&ucirc; mourir si jeune ". En 1968 il obtient d'autres succ&egrave;s sur disques " Ch&eacute;rie je me souviens et J'ai ta photo dans ma chambre ". Johnny Farago, meurt d'un infarctus le 31 juillet 1997, vingt ans apr&egrave;s la mort de son idole Elvis Presley.</p>
 	</div>
 <!--FIN CONTENU-->
-<?php include('sections/menu.inc.php'); ?>
+<?php echo Retro::html_menu(); ?>
 </div> 
 <!--FIN MILIEU-->
-<?php include('sections/pied.inc.php'); ?>
+<?php echo Retro::html_pied(); ?>
 </div>                  
 </body>
 </html>

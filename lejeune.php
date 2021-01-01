@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include "Retro.php";
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Retro Jeunesse 60 - Andr&eacute; Lejeune</title>
@@ -8,7 +10,7 @@
 
 <body>
 <div class="interface">
-<?php include('sections/entete.inc.php'); ?>
+<?php echo Retro::html_entete(); ?>
 <!--DEBUT MILIEU-->
 <div style="height: 510px;">
 <!--DEBUT CONTENU-->
@@ -21,10 +23,10 @@
 		<p>Outre sa carri&egrave;re sur sc&egrave;ne, en tant qu'auteur-compositeur et comme animateur &agrave; la t&eacute;l&eacute;vision, Andr&eacute; Lejeune est &eacute;galement un homme d'affaires. Lui-m&ecirc;me propri&eacute;taire de bo&icirc;tes et de salles de spectacle &agrave; diff&eacute;rentes &eacute;poques, il a exp&eacute;riment&eacute; le monde de la production en lan&ccedil;ant l'&eacute;tiquette "Colibri", tout en jouant un r&ocirc;le d'impr&eacute;sario aupr&egrave;s d'artistes de la rel&egrave;ve. Il est toujours actif dans le milieu du spectacle et s'est fortement impliqu&eacute; avec le Choeur des artistes.</p>
 	</div>
 <!--FIN CONTENU-->
-<?php include('sections/menu.inc.php'); ?>
+<?php echo Retro::html_menu(); ?>
 </div>
 <!--FIN MILIEU-->
-<?php include('sections/pied.inc.php'); ?>
+<?php echo Retro::html_pied(); ?>
 </div>
 </body>
 </html>

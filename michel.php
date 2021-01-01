@@ -1,4 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php
+include "Retro.php";
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Retro Jeunesse 60 - Dominique Michel</title>
@@ -8,7 +10,7 @@
 
 <body>
 <div class="interface">
-<?php include('sections/entete.inc.php'); ?>
+<?php echo Retro::html_entete(); ?>
 <!--DEBUT MILIEU-->
 <div style="height: 430px;">
 <!--DEBUT CONTENU-->
@@ -21,10 +23,10 @@
 		<p>Dominique obtient en 1957, un gand succ&egrave;s au palmar&egrave;s avec la chanson "Sur l'perron", par la suite elle conna&icirc;t plusieurs autres succ&egrave;s sur disques dont: Un clair de lune &agrave; Saint-Titre - Tu ne penses qu'&agrave; &ccedil;a - Une grenouille dans le vent et Ces bottes sont faites pour marcher. &Agrave; la t&eacute;l&eacute;vision, elle anime aussi en 1963-1964 "Copain-Copain" avec Robert Demontigny. En 1966, Dominique Michel est &eacute;lue Miss Radio-T&eacute;l&eacute;vision au Gala des artistes. De 1967 &agrave; 1972, elle joue &agrave; la t&eacute;l&eacute;vision dans la populaire s&eacute;rie "Moi et l'autre" avec Denise Filiatrault.</p>
 	</div>
 <!--FIN CONTENU-->
-<?php include('sections/menu.inc.php'); ?>
+<?php echo Retro::html_menu(); ?>
 </div> 
 <!--FIN MILIEU-->
-<?php include('sections/pied.inc.php'); ?>
+<?php echo Retro::html_pied(); ?>
 </div>                  
 </body>
 </html>

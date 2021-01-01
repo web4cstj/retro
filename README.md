@@ -1,24 +1,29 @@
-# Exercice "Retro"
+# Exercice "Retro orienté objet"
+Une classe PHP qui affiche du HTML. Cet exercice fait suite à l'exercice Retro.
 
 ## Préparation
-1. Télécharger le dossier `retro-depart` et le mettre sur le disque `D:`. Il s’agit de l’application Web que vous devez faire.
-1. Ouvrir le dossier de l'application Web dans VSCode.
-1. Démarrer le serveur dans le terminal à l'aide de l'instruction suivante :
-    ```cmd
-    php -S localhost:8000
+1. Installer l'application "`retro-master`" (branche `master`).
+
+## Directives
+1. Créer le fichier vide `Retro.php`
+1. Dans le fichier, créer la classe `Retro`
+1. Ajouter les méthodes **statiques** suivantes :
+    - html_titre()
+    - html_logo()
+    - html_menu()
+    - html_pied()
+    - html_pub()
+    - html_entete() 
+1. Programmer ces méthodes pour qu'elles **RETOURNENT** le contenu de leurs fichiers respectifs retrouvés dans le dossier "sections". Important: Faire un copier-coller du contenu et non un include dans la méthode.
+    ```php
+    static public function html_exemple() {
+        $resultat = '';
+        $resultat .= '<h1>Ceci est un exemple</h1>';
+        return $resultat;
+    }
     ```
-1. Changer l’extension des fichiers `.html` en `.php`.
-1. Visualiser la page `index.php` dans le fureteur en passant par l'adresse `localhost:8000`. Elle devrait bien s’afficher malgré le changement d’extension de fichier.
-1. Ouvrir la page `index.php` dans VSCode.
-1. Ouvrir également **TOUS** les fichiers du dossier sections.
-## Modification
-1. Trouver la portion du code HTML qui représente le logo avec son lien.
-1. Copier et coller ce code dans le fichier `logo.inc.php`.
-1. Remplacer ce code HTML dans `index.php` par la fonction `include`, qui pointe sur `logo.inc.php`. Ne pas oublier l’ouverture des codes PHP.
-1. Sauvegarder les 2 fichiers et visualiser les changements dans le fureteur.
-1. Répéter l’opération pour les fichiers `titre.inc.php`, `pub.inc.php`, `menu.inc.php`, `pied.inc.php` et finalement `entete.inc.php`.
-1. Remarquer la simplification du code HTML et appliquer les changements aux autres pages du site.
-## Particularités
-1. Si l’opération a bien été faite, le fichier `entete.inc.php` devrait contenir également des commandes `include`. C’est très normal.
-1. On doit modifier les liens du menu et du logo afin de refléter les changements d’extension de fichiers.
+1. Dans chacune des pages PHP
+    1. Faire l'inclusion du fichier d'objet.
+    1. Remplacer les instructions `include` par les `echo` apropriés.
+1. Supprimer le dossier "sections".
 
