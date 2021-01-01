@@ -1,7 +1,7 @@
 # Exercice "Retro"
 
 ## Préparation
-1. Télécharger le dossier `retro_depart` et le mettre sur le disque D:. Il s’agit de l’application Web que vous devez faire.
+1. Télécharger le dossier `retro-depart` et le mettre sur le disque `D:`. Il s’agit de l’application Web que vous devez faire.
 1. Ouvrir le dossier de l'application Web dans VSCode.
 1. Démarrer le serveur dans le terminal à l'aide de l'instruction suivante :
     ```cmd
